@@ -60,4 +60,5 @@ def get_fonts():
     return jsonify(sorted(fonts))  # Return the list of fonts in JSON format
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5002)  # Change port here
+    app.run(debug=True, host='0.0.0.0', port=5002)  # Bind to all IPs
+
